@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+/* poster */
+img{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.bg{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#5742f5;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+}
+.card{
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    top: 3px;
+    left: 40px;
+    margin: 10px;
+    background-color:orangered;
+    width: 16rem;
+    height: auto;
+}
+.Cardimg{
+    width: 16rem;
+    border-radius: 11px 11px 0 0;
+}
+.off{
+  padding: 16px;
+  font-size: 30px;
+  background-color: #5742f5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+   
+}
+
+
+.Footer{
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #33ffff;
+  display: flex;
+  gap: 3rem;
+}
+.companyinfo{
+  padding: 20px;
+}
+.links{
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 40px;
+}
+.links a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.anim{
+  background: repeating-linear-gradient(-45deg,red 0%,yellow 7.14%,rgb(0,255,0) rgb(0,255,255)21.4%,cyan 28.56%,blue 35.75%,magenta 20%);
+}
+
+
+.formbody{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+  .bg{
+    width: 100%;
+  }
+  .card{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 3px;
+   flex-direction: row;
+   flex-wrap: wrap;
+    border-radius: 12px;
+    color: white;
+    margin: 10px;
+    background-color:Oranged;
+    width: 18rem;
+    height: auto;
+}
+.Cardimg{
+    width: 18rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.Footer{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #33ffff;
+  display: flex;
+  gap: 3rem;
+}
+.companyinfo{
+  padding: 20px;
+}
+.links{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.links a{
+  flex-wrap: wrap;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+}
+
+.basb{
+  border-radius: 3px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  display: none;
+  scroll-behavior: smooth;
+}
+/*Foogter Section*/
